@@ -1,0 +1,98 @@
+net.codjo.administration.server
+	-> net.codjo.administration.server.audit
+	-> net.codjo.administration.server.audit.jdbc
+	-> net.codjo.database.common.api
+	-> net.codjo.sql.server
+	-> net.codjo.test.common
+	-> net.codjo.util.time
+
+net.codjo.administration.server.audit
+	-> net.codjo.test.common
+
+net.codjo.administration.server.audit.jdbc
+	-> net.codjo.administration.server
+	-> net.codjo.administration.server.audit
+	-> net.codjo.administration.server.operation.configuration
+	-> net.codjo.sql.server
+	-> net.codjo.sql.spy
+	-> net.codjo.test.common
+	-> net.codjo.util.time
+
+net.codjo.administration.server.audit.mad
+	-> net.codjo.administration.server.audit
+	-> net.codjo.agent
+	-> net.codjo.mad.server
+	-> net.codjo.mad.server.handler
+	-> net.codjo.security.common.api
+	-> net.codjo.test.common
+	-> org.mockito
+	-> org.mockito.stubbing
+
+net.codjo.administration.server.audit.memory
+	-> net.codjo.administration.common
+	-> net.codjo.agent.test
+	-> net.codjo.test.common
+
+net.codjo.administration.server.operation.systemProperties
+	-> net.codjo.administration.common
+	-> net.codjo.agent
+	-> net.codjo.agent.protocol
+	-> net.codjo.agent.test
+	-> net.codjo.test.common
+
+net.codjo.administration.server.operation.configuration
+	-> net.codjo.administration.common
+	-> net.codjo.administration.server
+	-> net.codjo.administration.server.audit
+	-> net.codjo.administration.server.audit.jdbc
+	-> net.codjo.administration.server.audit.mad
+	-> net.codjo.administration.server.operation.log
+	-> net.codjo.agent
+	-> net.codjo.agent.protocol
+	-> net.codjo.agent.test
+	-> net.codjo.mad.common
+	-> net.codjo.mad.server.handler
+	-> net.codjo.mad.server.plugin
+	-> net.codjo.sql.server
+	-> net.codjo.test.common
+	-> net.codjo.util.time
+	-> org.apache.commons.lang
+	-> org.mockito
+	-> org.mockito.invocation
+	-> org.mockito.stubbing
+
+net.codjo.administration.server.operation.log
+	-> net.codjo.administration.common
+	-> net.codjo.agent
+	-> net.codjo.agent.protocol
+	-> net.codjo.agent.test
+	-> net.codjo.test.common
+	-> net.codjo.test.common.fixture
+	-> net.codjo.test.common.matcher
+	-> net.codjo.util.file
+
+net.codjo.administration.server.operation.plugin
+	-> net.codjo.administration.common
+	-> net.codjo.agent
+	-> net.codjo.agent.protocol
+	-> net.codjo.agent.test
+	-> net.codjo.plugin.common
+	-> net.codjo.plugin.server
+	-> net.codjo.test.common
+
+net.codjo.administration.server.plugin
+	-> net.codjo.administration.common
+	-> net.codjo.administration.server.audit.memory
+	-> net.codjo.administration.server.operation.configuration
+	-> net.codjo.administration.server.operation.log
+	-> net.codjo.administration.server.operation.plugin
+	-> net.codjo.administration.server.operation.systemProperties
+	-> net.codjo.agent
+	-> net.codjo.mad.server.plugin
+	-> net.codjo.plugin.server
+	-> net.codjo.test.common
+	-> org.mockito
+	-> org.mockito.stubbing
+
+net.codjo.sql.server
+	-> net.codjo.database.common.api
